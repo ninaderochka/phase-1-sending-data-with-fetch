@@ -18,7 +18,7 @@ function submitData(name, email) {
     })
 
     .then (function(newObject) {
-        document.body.innerHTML = newObject["id"]
+        document.body.innerHTML = newObject.id
       })
       .catch((e) => {
         document.body.innerHTML = "Unauthorized Access";
